@@ -1,0 +1,33 @@
+<mat-card class="movieCard">
+  <mat-card-header>
+    <div mat-card-avatar class="avatar"></div>
+    <mat-card-title>{{m.movieName}}</mat-card-title>
+    <mat-card-subtitle>{{m.genre}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://angular.io/assets/images/logos/angular/angular.svg"> <!-- example image-->
+  <mat-card-content>
+    <p>{{m.content}}</p>
+  </mat-card-content>
+  <mat-card-footer>Length: {{m.length}}</mat-card-footer>
+  <mat-card-footer>User Rating: {{m.rating}}</mat-card-footer>
+  <mat-card-footer>Language: {{m.languageDub}}</mat-card-footer>
+  <mat-card-footer>Subtitles: {{m.languageSub}}</mat-card-footer>
+  <mat-card-footer>FSK: {{m.fsk}}</mat-card-footer>
+  <mat-card-actions>
+    <button mat-button>rent for {{m.price}}</button>
+  </mat-card-actions>
+</mat-card>
+  
+<!--   
+  movieName: string; -----------------------
+  genre: string; ------------------------
+  length: number;
+  isSeries: boolean;
+  rating: number;
+  price: number;
+  languageDub: string;
+  languageSub: string;
+  release: string;
+  fsk: number;
+  content: string; --------------------------------
+} -->
